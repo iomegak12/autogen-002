@@ -22,6 +22,10 @@ namespace TrainingAgent
                 Console.WriteLine("9. Run StructuralOutputDemo");
                 Console.WriteLine("10. Run MultimodalityModelDemo - Simple Background Image");
                 Console.WriteLine("11. Run MultimodalityModelDemo - Visual Chart");
+                Console.WriteLine("12. Run SKIntegrationWithAutoGenDemo");
+                Console.WriteLine("13. Run SKCustomPluginWithAutoGenDemo");
+                Console.WriteLine("14. Run BraveSearchPluginInAutoGenDemo");
+                Console.WriteLine("15. Run RoundRobinGroupChatDemo");
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter your choice: ");
 
@@ -63,6 +67,18 @@ namespace TrainingAgent
                             break;
                         case "11":
                             MultimodalityModelDemo.RunAsync2().GetAwaiter().GetResult();
+                            break;
+                        case "12":
+                            SKIntegrationWithAutoGenDemo.RunAsync().GetAwaiter().GetResult();
+                            break;
+                        case "13":
+                            SKCustomPluginWithAutoGenDemo.RunAsync().GetAwaiter().GetResult();
+                            break;
+                        case "14":
+                            BraveSearchPluginInAutoGenDemo.RunAsync().GetAwaiter().GetResult();
+                            break;
+                        case "15":
+                            RoundRobinGroupChatDemo.RunAsync().GetAwaiter().GetResult();
                             break;
                         case "0":
                             Console.WriteLine("Exiting...");

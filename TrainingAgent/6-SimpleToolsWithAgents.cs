@@ -50,7 +50,8 @@ public static class SimpleToolsWithAgents
         reply.Should().BeOfType<ToolCallAggregateMessage>();
         reply.GetContent().Should().Be("Microsoft AutoGen OpenAI");
         
-        reply = await agent.SendAsync("calculate tax on 100 with a tax rate of 0.2");   
+        reply = await agent.SendAsync(
+            "calculate tax on 100 with a tax rate of 0.2.");   
 
         reply.Should().NotBeNull();
         reply.Should().BeOfType<ToolCallAggregateMessage>();
