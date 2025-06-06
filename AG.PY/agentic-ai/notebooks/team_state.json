@@ -1,0 +1,108 @@
+{
+    "agent_states": {
+        "Assistant": {
+            "agent_state": {
+                "llm_context": {
+                    "messages": [
+                        {
+                            "content": "Tell me a fun fact about Octopuses.",
+                            "source": "user",
+                            "type": "UserMessage"
+                        },
+                        {
+                            "content": "A fun fact about octopuses is that they have three hearts! Two of the hearts pump blood to the gills, where the blood is oxygenated, and the third heart pumps the oxygen-rich blood to the rest of the body. This unique system helps them thrive in their underwater environment. Additionally, their blood is blue because it contains hemocyanin, which is more efficient than hemoglobin in cold, low-oxygen waters.",
+                            "source": "Assistant",
+                            "thought": null,
+                            "type": "AssistantMessage"
+                        },
+                        {
+                            "content": "A fun fact about octopuses is that they have three hearts! Two of the hearts pump blood to the gills, where it is oxygenated, while the third heart pumps the oxygenated blood to the rest of the body. This unique circulatory system helps them thrive in their underwater environment. Additionally, their blood is blue due to the presence of hemocyanin, which is more effective than hemoglobin in low-oxygen conditions.",
+                            "source": "Assistant",
+                            "thought": null,
+                            "type": "AssistantMessage"
+                        },
+                        {
+                            "content": "A fun fact about octopuses is that they have three hearts! Two of these hearts pump blood to the gills to pick up oxygen, while the third heart circulates the oxygenated blood to the rest of the body. This fascinating circulatory system helps them thrive in underwater environments. Interestingly, their blood is blue because it contains hemocyanin, which is more efficient than hemoglobin in cold, low-oxygen waters.",
+                            "source": "Assistant",
+                            "thought": null,
+                            "type": "AssistantMessage"
+                        },
+                        {
+                            "content": "A fun fact about octopuses is that they have three hearts! Two of these hearts pump blood to the gills to pick up oxygen, while the third heart circulates the oxygenated blood to the rest of the body. This unique circulatory system helps them thrive in underwater environments. Interestingly, their blood is blue because it contains hemocyanin, which is more effective than hemoglobin in cold, low-oxygen waters.",
+                            "source": "Assistant",
+                            "thought": null,
+                            "type": "AssistantMessage"
+                        }
+                    ]
+                },
+                "type": "AssistantAgentState",
+                "version": "1.0.0"
+            },
+            "message_buffer": [],
+            "type": "ChatAgentContainerState",
+            "version": "1.0.0"
+        },
+        "RoundRobinGroupChatManager": {
+            "current_turn": 0,
+            "message_thread": [
+                {
+                    "content": "Tell me a fun fact about Octopuses.",
+                    "created_at": "2025-06-05 23:50:28.755608+00:00",
+                    "metadata": {},
+                    "models_usage": null,
+                    "source": "user",
+                    "type": "TextMessage"
+                },
+                {
+                    "content": "A fun fact about octopuses is that they have three hearts! Two of the hearts pump blood to the gills, where the blood is oxygenated, and the third heart pumps the oxygen-rich blood to the rest of the body. This unique system helps them thrive in their underwater environment. Additionally, their blood is blue because it contains hemocyanin, which is more efficient than hemoglobin in cold, low-oxygen waters.",
+                    "created_at": "2025-06-05 23:50:30.940413+00:00",
+                    "metadata": {},
+                    "models_usage": {
+                        "completion_tokens": 89,
+                        "prompt_tokens": 37
+                    },
+                    "source": "Assistant",
+                    "type": "TextMessage"
+                },
+                {
+                    "content": "A fun fact about octopuses is that they have three hearts! Two of the hearts pump blood to the gills, where it is oxygenated, while the third heart pumps the oxygenated blood to the rest of the body. This unique circulatory system helps them thrive in their underwater environment. Additionally, their blood is blue due to the presence of hemocyanin, which is more effective than hemoglobin in low-oxygen conditions.",
+                    "created_at": "2025-06-05 23:50:32.183227+00:00",
+                    "metadata": {},
+                    "models_usage": {
+                        "completion_tokens": 90,
+                        "prompt_tokens": 129
+                    },
+                    "source": "Assistant",
+                    "type": "TextMessage"
+                },
+                {
+                    "content": "A fun fact about octopuses is that they have three hearts! Two of these hearts pump blood to the gills to pick up oxygen, while the third heart circulates the oxygenated blood to the rest of the body. This fascinating circulatory system helps them thrive in underwater environments. Interestingly, their blood is blue because it contains hemocyanin, which is more efficient than hemoglobin in cold, low-oxygen waters.",
+                    "created_at": "2025-06-05 23:50:33.507650+00:00",
+                    "metadata": {},
+                    "models_usage": {
+                        "completion_tokens": 88,
+                        "prompt_tokens": 222
+                    },
+                    "source": "Assistant",
+                    "type": "TextMessage"
+                },
+                {
+                    "content": "A fun fact about octopuses is that they have three hearts! Two of these hearts pump blood to the gills to pick up oxygen, while the third heart circulates the oxygenated blood to the rest of the body. This unique circulatory system helps them thrive in underwater environments. Interestingly, their blood is blue because it contains hemocyanin, which is more effective than hemoglobin in cold, low-oxygen waters.",
+                    "created_at": "2025-06-05 23:50:35.202454+00:00",
+                    "metadata": {},
+                    "models_usage": {
+                        "completion_tokens": 88,
+                        "prompt_tokens": 313
+                    },
+                    "source": "Assistant",
+                    "type": "TextMessage"
+                }
+            ],
+            "next_speaker_index": 0,
+            "type": "RoundRobinManagerState",
+            "version": "1.0.0"
+        }
+    },
+    "type": "TeamState",
+    "version": "1.0.0"
+}

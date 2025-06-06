@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  agentic-ai:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+    ports:
+      - "8000:8000"
+    command: ["python", "src/main.py"]

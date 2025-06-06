@@ -1,0 +1,11 @@
+openai
+autogen
+autogen-agentchat
+autogen-ext
+autogen-ext[openai]
+fastapi
+uvicorn
+pydantic
+streamlit
+
+ipykernel
