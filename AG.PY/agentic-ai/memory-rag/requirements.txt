@@ -1,0 +1,13 @@
+openai
+autogen
+autogen-agentchat
+autogen-ext
+autogen-ext[openai]
+autogen-ext[chroma]
+
+chromadb
+pysqlite3-binary
+onnxruntime
+
+aiohttp
+aiofiles
